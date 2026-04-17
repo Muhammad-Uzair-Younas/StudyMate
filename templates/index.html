@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <div class="header">StudyMate</div>
+        <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+
+        <div class="chat-history" id="chat-history">
+            <div class="message bot-message">
+                Hello! I am StudyMate. How can I help you today?
+            </div>
+
+            {% for user, bot in chats %}
+            <div class="message user-message">{{ user }}</div>
+            <div class="message bot-message">{{ bot }}</div>
+            {% endfor %}
+        </div>
+
+        <div class="input-container">
+            <input id="user-input" class="user-input" type="text" placeholder="Type your message..."
+                onkeypress="pressingKey(event)">
+            <button class="enter-btn" onclick="sendMessage()">Enter</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
