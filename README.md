@@ -2,21 +2,21 @@ StudyMate AI Chatbot
 StudyMate is an AI-powered educational chatbot built using Flask, OpenRouter API, and SQLite database. It acts as a smart study assistant that helps students with academic questions, programming, and exam preparation in a simple and structured way.
 
 Features
-AI-powered conversational chatbot
-Step-by-step explanations
-Chat history saved using SQLite
-Clear chat functionality
-Simple and user-friendly interface
+1. AI-powered conversational chatbot
+2. Step-by-step explanations
+3. Chat history saved using SQLite
+4. Clear chat functionality
+5. Simple and user-friendly interface
 
 Tech Stack
-Backend: Flask (Python)
-AI Model: OpenRouter API
-Database: SQLite
-Frontend: HTML, CSS, JavaScript
+1. Backend: Flask (Python)
+2. AI Model: OpenRouter API
+3. Database: SQLite
+4. Frontend: HTML, CSS, JavaScript
 
 Future Improvements
-User login system
-Better UI with Bootstrap / React
-Export chat history (PDF/CSV)
-Multi-language support
+1. User login system
+2. Better UI with Bootstrap / React
+3. Export chat history (PDF/CSV)
+4. Multi-language support
 This project is part of my learning journey in web development and reflects my current skills and progress.
